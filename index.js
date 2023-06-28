@@ -11,7 +11,7 @@ const resdataRouter = require("./routes/residentdata");
 app.use("/res-data", resdataRouter);
 
 db.sequelize.sync().then(() => {
-  app.listen(3000, () => {
+  app.listen(3003, () => {
     console.log("Server running @3000");
   });
 });
